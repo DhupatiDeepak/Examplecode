@@ -163,7 +163,7 @@ for n in range(2, limit + 1):
         print(n, end=" ")
 print()
 
-
+import numpy as np
 
 #
 # # Print all even numbers up to a limit
