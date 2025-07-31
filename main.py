@@ -140,17 +140,7 @@
 # #include <iostream>
 
 # Check if a number is prime
-num = int(input("Enter a number to check if it is prime: "))
 
-if num > 1:
-    for i in range(2, int(num ** 0.5) + 1):
-        if (num % i) == 0:
-            print(num, "is not a prime number")
-            break
-    else:
-        print(num, "is a prime number")
-else:
-    print(num, "is not a prime number")
 
 # Print all prime numbers up to a limit
 limit = int(input("Enter the limit to print all prime numbers up to: "))
