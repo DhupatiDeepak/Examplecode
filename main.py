@@ -1,142 +1,142 @@
-```python
-#print("Hello deepak deva")
+# ```python
+# #print("Hello deepak deva")
 
-# name  = "Deepak dude poi"
-# print("the name is :" +name)
-# print(f"the name is {name} welcome")
-
-
-
-# print("Deepak\n\t"*100)
-# numb = 1
-# numb2 = 5.66
-# name = 'Deepak deva'
-# is_published = True
-# print(numb,numb2,name,is_published)
-# print(numb + numb2 , name , is_published)
-#
-# name = input("what is your name: ")
-# print("my name is :"+ name)
-
-# colour =  input("what is your favourite colour ? ")
-# number = int(input("what is you fav number ? "))
-# name  = input("what is your name ? ")
-# percentage = input("what is the percentage of you attendance ? ")
-#
-# print(name + " fav colour is" + colour + " fav number is" , number , " percentage is " , percentage)
+# # name  = "Deepak dude poi"
+# # print("the name is :" +name)
+# # print(f"the name is {name} welcome")
 
 
-# birth_year = int(input("enter the year you born"))
-# age  = 2025 - birth_year
-# print("the age is ", age)
 
-# numb = 9
-#
-# print("the  numb is " + numb)
+# # print("Deepak\n\t"*100)
+# # numb = 1
+# # numb2 = 5.66
+# # name = 'Deepak deva'
+# # is_published = True
+# # print(numb,numb2,name,is_published)
+# # print(numb + numb2 , name , is_published)
+# #
+# # name = input("what is your name: ")
+# # print("my name is :"+ name)
+
+# # colour =  input("what is your favourite colour ? ")
+# # number = int(input("what is you fav number ? "))
+# # name  = input("what is your name ? ")
+# # percentage = input("what is the percentage of you attendance ? ")
+# #
+# # print(name + " fav colour is" + colour + " fav number is" , number , " percentage is " , percentage)
 
 
-# name = "raju"
+# # birth_year = int(input("enter the year you born"))
+# # age  = 2025 - birth_year
+# # print("the age is ", age)
 
-# print("the  numb is " + name)
+# # numb = 9
+# #
+# # print("the  numb is " + numb)
 
-# lbs = int(input("enter the weight in lbs "))
-# kg  = lbs *0.45
-# print("the weight in kgs ",kg)
 
-# name  = 'hi this is Deepak "nani" dude'
-# # print(name)
-# print(name[5])
-# print(name[0:28])
-# print(name[:5])
-# print(name[5:])
+# # name = "raju"
 
-# print("*\t$\t#\t%"*1600)
+# # print("the  numb is " + name)
 
-# Diamond pattern in Python
+# # lbs = int(input("enter the weight in lbs "))
+# # kg  = lbs *0.45
+# # print("the weight in kgs ",kg)
 
-# n = 7  # Height of the diamond (should be odd for symmetry)
-#
-# for i in range(n):
-#     if i <= n // 2:
-#         print(" " * (n // 2 - i) + "* " * (i + 1))
-#     else:
-#         print(" " * (i - n // 2) + "* " * (n - i))
+# # name  = 'hi this is Deepak "nani" dude'
+# # # print(name)
+# # print(name[5])
+# # print(name[0:28])
+# # print(name[:5])
+# # print(name[5:])
 
-# Prime number program in Python
+# # print("*\t$\t#\t%"*1600)
 
-# num = int(input("Enter a number to check if it is prime: "))
+# # Diamond pattern in Python
 
-# if num > 1:
-#     for i in range(2, int(num ** 0.5) + 1):
-#         if (num % i) == 0:
-#             print(num, "is not a prime number")
-#             break
-#     else:
-#         print(num, "is a prime number")
-# else:
-#     print(num, "is not a prime number")
+# # n = 7  # Height of the diamond (should be odd for symmetry)
+# #
+# # for i in range(n):
+# #     if i <= n // 2:
+# #         print(" " * (n // 2 - i) + "* " * (i + 1))
+# #     else:
+# #         print(" " * (i - n // 2) + "* " * (n - i))
 
-# # Print all prime numbers up to a limit
-# limit = int(input("Enter the limit to print all prime numbers up to: "))
-# print("Prime numbers up to", limit, "are:")
-# for n in range(2, limit + 1):
-#     for i in range(2, int(n ** 0.5) + 1):
-#         if n % i == 0:
-#             break
-#     else:
-#         print(n, end=" ")
-# print()
-#
-# # Print all even numbers up to a limit
-# even_limit = int(input("Enter the limit to print all even numbers up to: "))
-# print("Even numbers up to", even_limit, "are:")
-# for n in range(2, even_limit + 1, 2):
-#     print(n, end=" ")
-# print()
-#
-# # Print a star pyramid pattern
-# rows = int(input("Enter the number of rows for the star pattern: "))
-# for i in range(1, rows + 1):
-#     print(" " * (rows - i) + "* " * i)
+# # Prime number program in Python
 
-// Singleton pattern in C++
-#include <iostream>
-using namespace std;
+# # num = int(input("Enter a number to check if it is prime: "))
 
-class Singleton {
-private:
-    static Singleton* instance;
-    // Private constructor to prevent instancing
-    Singleton() {
-        cout << "Singleton instance created." << endl;
-    }
-public:
-    static Singleton* getInstance() {
-        if (instance == nullptr) {
-            instance = new Singleton();
-        }
-        return instance;
-    }
-    void showMessage() {
-        cout << "Hello from Singleton!" << endl;
-    }
-};
+# # if num > 1:
+# #     for i in range(2, int(num ** 0.5) + 1):
+# #         if (num % i) == 0:
+# #             print(num, "is not a prime number")
+# #             break
+# #     else:
+# #         print(num, "is a prime number")
+# # else:
+# #     print(num, "is not a prime number")
 
-// Initialize pointer to zero so that it can be initialized in first call to getInstance
-Singleton* Singleton::instance = nullptr;
+# # # Print all prime numbers up to a limit
+# # limit = int(input("Enter the limit to print all prime numbers up to: "))
+# # print("Prime numbers up to", limit, "are:")
+# # for n in range(2, limit + 1):
+# #     for i in range(2, int(n ** 0.5) + 1):
+# #         if n % i == 0:
+# #             break
+# #     else:
+# #         print(n, end=" ")
+# # print()
+# #
+# # # Print all even numbers up to a limit
+# # even_limit = int(input("Enter the limit to print all even numbers up to: "))
+# # print("Even numbers up to", even_limit, "are:")
+# # for n in range(2, even_limit + 1, 2):
+# #     print(n, end=" ")
+# # print()
+# #
+# # # Print a star pyramid pattern
+# # rows = int(input("Enter the number of rows for the star pattern: "))
+# # for i in range(1, rows + 1):
+# #     print(" " * (rows - i) + "* " * i)
 
-int main() {
-    Singleton* s1 = Singleton::getInstance();
-    s1->showMessage();
+# // Singleton pattern in C++
+# #include <iostream>
+# using namespace std;
 
-    // Try to get another instance
-    Singleton* s2 = Singleton::getInstance();
-    if (s1 == s2) {
-        cout << "Both are the same instance." << endl;
-    }
-    return 0;
-}
+# class Singleton {
+# private:
+#     static Singleton* instance;
+#     // Private constructor to prevent instancing
+#     Singleton() {
+#         cout << "Singleton instance created." << endl;
+#     }
+# public:
+#     static Singleton* getInstance() {
+#         if (instance == nullptr) {
+#             instance = new Singleton();
+#         }
+#         return instance;
+#     }
+#     void showMessage() {
+#         cout << "Hello from Singleton!" << endl;
+#     }
+# };
 
-#include <iostream>
+# // Initialize pointer to zero so that it can be initialized in first call to getInstance
+# Singleton* Singleton::instance = nullptr;
 
-```
+# int main() {
+#     Singleton* s1 = Singleton::getInstance();
+#     s1->showMessage();
+
+#     // Try to get another instance
+#     Singleton* s2 = Singleton::getInstance();
+#     if (s1 == s2) {
+#         cout << "Both are the same instance." << endl;
+#     }
+#     return 0;
+# }
+
+# #include <iostream>
+
+# ```
