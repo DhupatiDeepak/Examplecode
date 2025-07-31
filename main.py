@@ -139,4 +139,78 @@
 
 # #include <iostream>
 
-# ```
+# Check if a number is prime
+num = int(input("Enter a number to check if it is prime: "))
+
+if num > 1:
+    for i in range(2, int(num ** 0.5) + 1):
+        if (num % i) == 0:
+            print(num, "is not a prime number")
+            break
+    else:
+        print(num, "is a prime number")
+else:
+    print(num, "is not a prime number")
+
+# Print all prime numbers up to a limit
+limit = int(input("Enter the limit to print all prime numbers up to: "))
+print("Prime numbers up to", limit, "are:")
+for n in range(2, limit + 1):
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            break
+    else:
+        print(n, end=" ")
+print()
+#
+# # Print all even numbers up to a limit
+# even_limit = int(input("Enter the limit to print all even numbers up to: "))
+# print("Even numbers up to", even_limit, "are:")
+# for n in range(2, even_limit + 1, 2):
+#     print(n, end=" ")
+# print()
+#
+# # Print a star pyramid pattern
+# rows = int(input("Enter the number of rows for the star pattern: "))
+# for i in range(1, rows + 1):
+#     print(" " * (rows - i) + "* " * i)
+
+# // Singleton pattern in C++
+# #include <iostream>
+# using namespace std;
+
+# class Singleton {
+# private:
+#     static Singleton* instance;
+#     // Private constructor to prevent instancing
+#     Singleton() {
+#         cout << "Singleton instance created." << endl;
+#     }
+# public:
+#     static Singleton* getInstance() {
+#         if (instance == nullptr) {
+#             instance = new Singleton();
+#         }
+#         return instance;
+#     }
+#     void showMessage() {
+#         cout << "Hello from Singleton!" << endl;
+#     }
+# };
+
+# // Initialize pointer to zero so that it can be initialized in first call to getInstance
+# Singleton* Singleton::instance = nullptr;
+
+# int main() {
+#     Singleton* s1 = Singleton::getInstance();
+#     s1->showMessage();
+
+#     // Try to get another instance
+#     Singleton* s2 = Singleton::getInstance();
+#     if (s1 == s2) {
+#         cout << "Both are the same instance." << endl;
+#     }
+#     return 0;
+# }
+
+# #include <iostream>
