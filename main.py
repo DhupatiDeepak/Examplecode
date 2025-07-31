@@ -164,6 +164,7 @@ for n in range(2, limit + 1):
 print()
 
 import numpy as np
+import pandas as np
 
 #
 # # Print all even numbers up to a limit
