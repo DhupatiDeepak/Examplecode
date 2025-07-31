@@ -162,6 +162,9 @@ for n in range(2, limit + 1):
     else:
         print(n, end=" ")
 print()
+
+import numpy as np
+
 #
 # # Print all even numbers up to a limit
 # even_limit = int(input("Enter the limit to print all even numbers up to: "))
